@@ -1,0 +1,9 @@
+<svg height="300" width="300">
+    <title>Example image</title>
+
+    <rect x="0" y="0" width="300" height="100"/>
+    <rect x="0" y="0" width="90" height="90" stroke="white" stroke-width="2" />
+    <line x1="0" y1="0" x2="50" y2="100" style="stroke:rgb(255,0,0);stroke-width:2" />
+
+    Blah-blah!
+</svg>

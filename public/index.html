@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Drawbot</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+            
+        <style>
+            h1 {
+                font-size: 80px;
+            }
+
+            .main-container {
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-container container">
+            <h1 class="text-center">Drawbot</h1>
+            <p>Welkom op ons controlepaneel!</p>
+            <p>Het feit dat deze webpagina opent, betekent dat de webserver werkt. Hoera!</p>
+	    <p>De Drawbot werkt het best met bestanden van het SVG-formaat. Zo'n bestanden kun je onderaan uploaden.</p>
+            <p><i>Veel tekenplezier!<br />Arthur en Simon</i></p>
+
+            <form action="image.html" method="post" enctype="multipart/form-data">
+                <div class="input-group">
+                    <div class="custom-file">
+                        <input name="inputGroupFile" type="file" class="custom-file-input" id="inputGroupFile" accept=".svg">
+                        <label class="custom-file-label" for="inputGroupFile">Kies bestand...</label>
+                    </div>
+                    <div class="input-group-append">
+                        <input type="submit" class="btn btn-outline-primary" type="button">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            // Show filename on <input>-label when a file is selected
+            var input = document.getElementById('inputGroupFile');
+            input.addEventListener('change', function () {
+                var filename = input.value.split('\\');
+                filename = filename[filename.length - 1];
+                document.querySelector("label[for='inputGroupFile']").innerHTML = filename;
+            });
+        </script>
+    </body>
+</html>

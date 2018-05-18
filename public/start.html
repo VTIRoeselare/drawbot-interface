@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Drawbot</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+            
+        <style>
+            h1 {
+                font-size: 80px;
+            }
+
+            .main-container {
+                width: 50%;
+            }
+
+            .loader {
+                border: 16px solid #663399;
+                border-top: 16px solid white;
+                border-radius: 50%;
+                width: 120px;
+                height: 120px;
+                animation: spin 2s linear infinite;
+                margin: 50px auto;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-container container">
+            <h1 class="text-center">Drawing...</h1>
+            <div class="loader"></div>
+        </div>
+    </body>
+</html>

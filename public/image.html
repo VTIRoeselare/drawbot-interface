@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Drawbot</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+            
+        <style>
+            h1 {
+                font-size: 80px;
+            }
+
+            .main-container {
+                width: 50%;
+            }
+        
+            #preview {
+                width: 100%;
+                border: 1px solid black;
+                margin-bottom: 10px;
+            }
+        
+            .btn-success {
+                float: right;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-container container">
+            <h1 class="text-center">Drawbot</h1>
+            
+            <p><center>Tekenvoorbeeld:</center></p>
+            <img id="preview" src="./uploads/{{imgurl}}" />
+            
+            <a href="index.html">
+                <button type="button" class="btn btn-primary">Ander bestand</button>
+            </a>
+
+            <a href="start.html?f={{imgurl}}">
+                <button type="button" class="btn btn-success">Starten</button>
+            </a>
+        </div>
+    </body>
+</html>
